@@ -1,0 +1,196 @@
+<!--
+    Questo è un commento in HTML.
+    Tutto cio che sta tra i simboli di riga 1 e di chiusura non sarà letto come codice.
+
+    HTML -> E' un acronimo che sta per HyperText Markup Language e identifica tutti i comandi necessari alla graficazione
+    di pagine web.
+
+    ATTENZIONE!!!!!
+        HTML è un linguaggio di Markup NON DI PROGRAMMAZIONE!!!
+
+    HTML è formato da comandi detti TAG, che si identificano per la presenza dei diamanti <>
+
+    La stragrande maggioranza dei tag vuole sempre un tag di apertura e uno di chiusura <tag></tag>
+
+    Dentro a ogni tag possiamo trovare delle parole di accompagnamento chiamate ATTRIBUTI che sono facoltativi
+
+    I tag creano delle strutture gerarchiche, perchè vengono scritti uno all'interno dell'altro: 
+    il tag esterno si chiama Padre, i tag interni si chiamano Figli.
+    L'intera struttura di una pagina HTML, comprensiva della gerarchia dei tag si chiama DOM
+
+    HTML lavora sulla struttra, quindi decide che elementi devono essere presenti nella pagina web ma non decide il loro stile.
+
+    Il lavoro di stile viene effettuato da un altro file che avra l'estensione .css e sara collegato al nostro .html
+-->
+
+<!--Il TAG html serve per aiutare il browser a codificare più velocemente la pagina-->
+<html>
+    <!--Il TAG head serve per le informazioni legate agli import esterni e al titolo e al logo della pagina-->
+    <head>
+        <title>Primo HTML</title>
+        
+        <!-- Collego un foglio di stile CSS -->
+        <link rel="Stylesheet" type="text/css" href="styles.css">
+    </head>
+    <!--Il TAG body rappresenta il corpo della pagina, cioè la zona centrale in cui solitamente l'utente lavora-->
+    <body>
+        <!--
+            I tag H identificano i titoli. 
+            Si va da 1 a 6, dove 1 è il più grande e 6 il più piccolo
+            <h1>Ciao Mondo!</h1>
+            <h2>Come</h2>
+            <h3>Stai</h3>
+            <h4>Amico</h4>
+            <h5>Bella</h5>
+            <h6>Giornata</h6>
+        -->
+        <h1>Titolo Principale</h1>
+        <h2>Sottotitolo</h2>
+
+        <!-- 
+            <p>
+                Qui noi scriviamo paragrafi più o meno grandi di testo.
+                Rispetto ai TAG h il TAG p non è in grassetto. <br>
+                Inoltre, se voglio andare a capo con il testo, devo usare il TAG br, 
+                perchè andare a capo in VSC non serve a nulla
+            </p>
+        -->
+
+        <!-- Il TAG div non fa altro che creare uno spazio nel body dove inserire roba-->
+        <div id="indice">
+            <!-- 
+                Il tag a serve per fare collegamenti ipertestuali all'interno della 
+                stessa pagina o verso pagine web diverse.
+                Per indicare dove il collegamento deve puntare si usa l'attributo
+                href, che vuole negli apici o l'indirizzo della pagina esterna
+                o il name del tag della pagina interna. Se mette il name, ricordatevi
+                di scriverci davanti il #
+            -->
+            <a name="indice"></a>
+            <h2>Indice</h2>
+            
+            <!-- 
+                OL Ordinate List, cioè elenco numerato
+                UL Unordinated List cioè elenco puntato
+                LI si usa per entrambi gli elenchi per indicare i singoli punti
+            -->
+            <ol>
+                <li>
+                    <a href="#capitolo1">
+                        Capitolo 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#capitolo2">
+                        Capitolo 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#capitolo3">
+                        Capitolo 3
+                    </a>
+                </li>
+                <li>
+                    <a href="#capitolo4">
+                        Capitolo 4
+                    </a>
+                </li>
+            </ol>
+           <!--
+               <ul>
+                   <li>Capitolo 1</li>
+                   <li>Capitolo 2</li>
+                </ul>
+            --> 
+        </div>
+
+        <div class="contenitore">
+            <a name="capitolo1"></a>
+            <h2>Capitolo 1</h2>
+                
+            <p id="paragrafo1"> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Tenetur, reiciendis aspernatur? Eius quasi fugiat nisi quaerat consequatur
+                recusandae numquam dolorem, distinctio, expedita ab ipsa. 
+                Molestiae ut rem impedit minus provident porro nihil quas repellendus qui 
+                accusantium rerum itaque repudiandae vel omnis cupiditate facere voluptas 
+                quaerat ipsum, deleniti exercitationem esse ducimus.
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Ea vitae a, error nisi quod porro sit inventore veritatis officia itaque. 
+                Eum soluta, tenetur natus ut quaerat vitae nobis odio excepturi ratione 
+                incidunt nihil deleniti porro error quae ducimus nemo et?
+            </p>
+        </div>
+
+        <div class="contenitore">
+            <a name="capitolo2"></a>
+            <h2>Capitolo 2</h2>
+                
+            <p id="paragrafo2"> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Tenetur, reiciendis aspernatur? Eius quasi fugiat nisi quaerat consequatur
+                recusandae numquam dolorem, distinctio, expedita ab ipsa. 
+                Molestiae ut rem impedit minus provident porro nihil quas repellendus qui 
+                accusantium rerum itaque repudiandae vel omnis cupiditate facere voluptas 
+                quaerat ipsum, deleniti exercitationem esse ducimus.
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Ea vitae a, error nisi quod porro sit inventore veritatis officia itaque. 
+                Eum soluta, tenetur natus ut quaerat vitae nobis odio excepturi ratione 
+                incidunt nihil deleniti porro error quae ducimus nemo et?
+            </p>
+        </div>
+
+        <div class="contenitore">
+            <a name="capitolo3"></a>
+            <h2>Capitolo 3</h2>
+                
+            <p id="paragrafo3"> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Tenetur, reiciendis aspernatur? Eius quasi fugiat nisi quaerat consequatur
+                recusandae numquam dolorem, distinctio, expedita ab ipsa. 
+                Molestiae ut rem impedit minus provident porro nihil quas repellendus qui 
+                accusantium rerum itaque repudiandae vel omnis cupiditate facere voluptas 
+                quaerat ipsum, deleniti exercitationem esse ducimus.
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Ea vitae a, error nisi quod porro sit inventore veritatis officia itaque. 
+                Eum soluta, tenetur natus ut quaerat vitae nobis odio excepturi ratione 
+                incidunt nihil deleniti porro error quae ducimus nemo et?
+            </p>
+        </div>
+
+        <div class="contenitore">
+            <a name="capitolo4"></a>
+            <h2>Capitolo 4</h2>
+                
+            <p id="paragrafo4"> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Tenetur, reiciendis aspernatur? Eius quasi fugiat nisi quaerat consequatur
+                recusandae numquam dolorem, distinctio, expedita ab ipsa. 
+                Molestiae ut rem impedit minus provident porro nihil quas repellendus qui 
+                accusantium rerum itaque repudiandae vel omnis cupiditate facere voluptas 
+                quaerat ipsum, deleniti exercitationem esse ducimus.
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Ea vitae a, error nisi quod porro sit inventore veritatis officia itaque. 
+                Eum soluta, tenetur natus ut quaerat vitae nobis odio excepturi ratione 
+                incidunt nihil deleniti porro error quae ducimus nemo et?
+            </p>
+        </div>
+
+        <div id="rompipalle">
+            <div id="tornasu">
+                <a href="#indice">
+                    <h3>Torna su</h3>
+                </a>
+                <a href="https://www.regione.lombardia.it/">
+                    Cliccami
+                </a>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
