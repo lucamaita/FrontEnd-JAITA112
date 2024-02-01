@@ -1,0 +1,116 @@
+/*
+    Commento in CSS
+
+    CSS -> E un acronimo che sta per CASCADING STYLE SHEETS
+
+    I file con estensione .css sono file che si occupano solo dello stile della pagina.
+
+    Qui quindi troveremo le indicazioni legate a colori, dimensioni, posizioni nello spazio, effetti speciali.
+
+    Lo stile potrebbe andare anche direttamente nei vari tag html, questo pero rende piu difficile leggere 
+    i singoli tag perche diventano molto popolati.
+
+    Quindi e prassi comune mettere lo stile in uno o piu file separati come faremo noi ora.
+
+    Per collegare un foglio CSS a un foglio HTML dovremo scrivere un tag apposito nell'head dell'html
+*/
+
+/* Se vogliamo attribuire lo stesso stile a tutti i tag uguali mi basta scrivere come sotto */
+
+/* dark mode(?) */
+body {
+    color: color-mix(in srgb, Canvas, CanvasText 2.5%);
+    background-color: color-mix(in srgb, CanvasText, Canvas 15%);
+  }
+/* dark mode(?) */
+
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    /* 
+    Per i colori potete scegliere tra quelli di default (hanno gia il loro nome il VSC)
+    Oppure potete usare la terna RGB
+    Oppure potete usare il codice esadecimale del colore
+    */
+    color: red;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    color: blue;
+    /* Disegna una sottolineatura */
+    text-decoration: underline;
+}
+
+ p{
+    color: darkcyan;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+ /* 
+ Posso modificare lo stile di un ID singolo chiamandolo tramite #id
+ ATTENTI: gli id devono essere univoci, se volete che piu elementi abbiano
+            lo stesso stile dovete usare l'attributo class, che il CSS si chiama
+            tramite il carattere .class
+ */
+ #paragrafo1 {
+    color: chocolate;
+ }
+
+ /* In questo modo influenzo solo i tag h3 presenti dento all'elemento con id #tornasu */
+ #tornasu h3{
+    text-align: center;
+ }
+
+ .paragrafo {
+    color: palevioletred;
+ }
+
+ div {
+    /* Decide rispettivamente lo spessore, il colore e l'aspetto dei bordi */
+    border: 1px red solid;
+    /* Si usa per indicare lo spazio da tenere tra l'interno del box e il suo contenuto */
+    padding: 5px;
+    /* Si usa per indicare lo spazio da tenere tra l'esterno del box e il suo contenitore */
+    margin: 10px;
+    /* Si usa per scegliere il colore di sfondo. 
+    Background puo essere usato anche per immagini o pattern ripetitivi */
+    background-color: grey;
+ }
+
+ #tornasu {
+    width: 100px;
+    height: 100px;
+    border: solid 10px yellow;
+    background-color: lightgreen;
+ }
+
+ #rompipalle {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: none;
+ }
+
+ .contenitore {
+    padding: 30px;
+ }
+
+ a {
+    text-decoration: none;
+    color: black;
+ }
+
+ /* Posso dare anche comportamenti agli eventi che accadono nella pagina, ad esempio
+ hover e l'azione di passare con il mouse sopra qualcosa, in questo caso sopra a tag a*/
+ a:hover {
+    color: blue;
+    font-size: 30px;
+ }
+ 
