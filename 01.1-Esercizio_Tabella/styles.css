@@ -1,0 +1,51 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+.yellow-bg {
+    background-color: yellow;
+}
+
+.green-bg {
+    background-color: green;
+}
+
+.multi-color:nth-child(odd) {
+    color: blue;
+}
+
+.multi-color:nth-child(even) {
+    color: green;
+}
+
+.green-text {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.border-red {
+    border-color: red;
+}
+
+.border-blue {
+    border-color: blue;
+}
+
+.border-green {
+    border-color: green;
+}
+
+.cella-singola {
+    text-align: center;
+    font-weight: bold;
+}

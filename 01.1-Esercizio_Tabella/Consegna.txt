@@ -1,0 +1,14 @@
+
+Creare una tabella con 4 righe e 3 colonne, 
+
+la prima riga deve avere il colore di sfondo rosso, la seconda giallo e la terza verde,
+
+nella seconda riga inseriamo nella Prima colonna la scritta "Primo!" con ogni lettera colorata in modo diverso, 
+mentre nella terza colonna inseriamo la scritta sottolineata "Giù" di colore verde acqua.
+
+la terza riga non deve avere la visualizzazione a 3 colonne ma deve sembrare un unica casella.
+
+la quarta riga deve avere il bordo colorato diverso per ogni casella 
+e una lettera dello stesso colore per ogni casella.
+
+USARE UN FILE CHIAMATO style.css
