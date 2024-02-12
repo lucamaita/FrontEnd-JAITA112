@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calcola con me!</title>
+    <link rel="Stylesheet" type="text/css" href="Stile.css">
+    <script src="Logica.js"></script>
+</head>
+<body>
+    <!-- 
+        FORM è il tag che si occupa della richiesta e del salvataggio di informazioni
+        soprattutto in relazione con un BE.
+    -->
+    <form>
+        <!--
+            TABLE è un tag che crea una tabella. Si compone di:
+            TR -> riga
+            TD -> colonna
+            TH -> intestazione tabella
+        -->
+        <table>
+            <tr>
+                <th colspan="2" id="intestazione">
+                    Calcola con me!
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Base:
+                </td>
+                <td>
+                    <input type="number" id="base" placeholder="0.0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Altezza:
+                </td>
+                <td>
+                    <input type="number" id="altezza" placeholder="0.0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Perimetro:
+                </td>
+                <td>
+                    <output type="number" id="perimetro"></output>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Area:
+                </td>
+                <td>
+                    <input type="number" id="area" readonly/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="CALCOLA" onclick="valida()">
+                </td>
+                <td>
+                    <input type="button" value="RESET" onclick="pulisci()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
