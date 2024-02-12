@@ -1,0 +1,81 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    font-size: 60px;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: lightblue;
+    background-color: black;
+}
+
+.menu
+{
+    border: solid 2px red;
+    height: 100px;
+    width: 60%;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+.menu a
+{
+    border: solid 2px green;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(0,0,255);
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu a:hover
+{
+    background-color: darkblue;
+    color: yellow;
+}
+
+.menu a:active
+{
+    background-color: red;
+    color: black;
+}
+
+button
+{
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover
+{
+    font-size: 15px;
+}
+
+button:active
+{
+    background-color: yellow;
+    color: brown;
+}
+
+#contenitore
+{
+    border: solid 1px black;
+    padding: 10px;
+    text-align: center;
+}
+
+img
+{
+    width: 280px;
+}

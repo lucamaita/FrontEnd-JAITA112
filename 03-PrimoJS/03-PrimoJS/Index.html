@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Primo JS</title>
+    <!-- Collego il foglio css -->
+    <link rel="Stylesheet" href="Stile.css" type="text/css">
+    <!-- Collego il foglio JavaScript -->
+    <script src="Logica.js"></script>
+    <!-- Aggiungo una favicon, cioè l'immaginetta a sinistra accanto al nome della pagina -->
+    <link rel="icon" type="image/png" href="image/Favicon.png">
+
+    <!-- Collego il font che mi interessa da google.font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Protest+Revolution&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>HOME PAGE</h1>
+
+    <div class="menu" id="home">
+        <a href="#home">Home</a>
+        <a href="http://www.google.com">Google</a>
+        <a href="https://thumbs.dreamstime.com/z/superficie-praticante-il-surfing-dell-acqua-onda-di-oceano-mare-124362369.jpg?ct=jpeg">Immagine a caso</a>
+    </div>
+
+    <button type="button" id="bottone1" onclick="mostra()">Cliccami</button>
+
+    <div id="contenitore">
+        <p>Occupo dello spazio per fa vedere che esiste il DIV</p>
+        <br>
+        <img src="image/527228.jpg">
+        <br>
+        <button type="button" id="bottone2" onclick="nascondi()">Nascondi</button>
+    </div>
+</body>
+<!--
+     ATTENZIONE!!
+    In questo modo chiamo una funzione JS al caricamento della pagina.
+    Però JS è più veloce a caricarsi rispetto a HTML, e questo può portare a disagi se la chiamata
+    si attiva troppo presto.
+    Per questo motivo è prassi mettere tutte le chiamatate JS automatiche alla fine del tag BODY
+    Così che abbiamo la certezza che tutto il codice HTML sia già stato caricato completamente
+-->
+<script>
+    nascondi();
+</script>
+</html>
