@@ -1,0 +1,11 @@
+Scrivere una pagina web che permetta la conversione di diverse monete.
+<br>
+Dovete permettere all'utente di scegliere, tramite un menù a tendina, la moneta di partenza.
+Accanto l'utente deve poter inserire l'importo.
+<br>
+Inoltre voglio esista un tasto "converti" che permette di vedere in output l'importo originale convertito in euro.
+<br>
+<br>
+Per chi finisce presto, provate a fare lo stesso lavoro ma anche le monete convertitie devono poter scegliere l'unità di misura
+<br>
+<br>
