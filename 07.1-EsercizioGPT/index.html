@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collezione di Videogiochi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Collezione di Videogiochi</h1>
+    
+    <!-- Form per inserire nuovi videogiochi -->
+    <form id="videogameForm">
+        <label for="title">Titolo:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="genre">Genere:</label>
+        <input type="text" id="genre" name="genre" required>
+        
+        <label for="platforms">Piattaforme:</label>
+        <input type="text" id="platforms" name="platforms" required>
+        
+        <label for="price">Prezzo:</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+        
+        <label for="pegi">Pegi:</label>
+        <input type="text" id="pegi" name="pegi" required>
+        
+        <label for="releaseDate">Data di Rilascio:</label>
+        <input type="date" id="releaseDate" name="releaseDate" required>
+        
+        <button type="submit">Aggiungi Videogioco</button>
+    </form>
+    
+    <!-- Elenco dei videogiochi presenti -->
+    <div id="videogameList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
