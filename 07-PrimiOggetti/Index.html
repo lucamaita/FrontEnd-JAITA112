@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenzia Viaggi</title>
+    <link rel="stylesheet" type="text/css" href="Stile.css">
+    <script src="Logica.js"></script>
+    <link rel="icon" type="icon/jpg" href="Favicon agenzia viaggi.jpg">
+</head>
+<body>
+    <!-- Si occupa della parte alta del sito, dell'intestazione-->
+    <div id="testata">
+        <h1>Agenzia Fighissima!!</h1>
+        <h3>Ovunque nel mondo, anche per poracci come te!</h3>
+    </div>
+
+    <!-- Si occupa del form di inserimento dati del viaggio -->
+    <div id="contenitore">
+        <form id="formInserimento">
+            <table>
+                <tr>
+                    <th colspan="2">
+                        Dettagli Viaggio
+                    </th>
+                </tr>
+                <tr>
+                    <td>Destinazione</td>
+                    <td>
+                        <input type="text" id="destinazione" placeholder="es. Roma">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Data Partenza</td>
+                    <td>
+                        <input type="date" id="dataPartenza">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Permanenza</td>
+                    <td>
+                        <input type="number" id="permanenza" placeholder="1" 
+                         onblur="preventivo.value = costoGiornaliero.value*permanenza.value">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Costo Giornaliero</td>
+                    <td>
+                        <input type="number" id="costoGiornaliero" placeholder="35.00" 
+                         onblur="preventivo.value = costoGiornaliero.value*permanenza.value">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Immagine</td>
+                    <td>
+                        <input type="url" id="immagine" placeholder="https://www.foto.it">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Descrizione</td>
+                    <td>
+                        <textarea id="descrizione" placeholder="C'era una volta, in una terra lontana lontana..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Preventivo</td>
+                    <td>
+                        <output id="preventivo"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Reset" onclick="svuota()">
+                    </td>
+                    <td>
+                        <input type="button" value="Salva" onclick="aggiungi()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- Si occupa di graficare i viaggi già salvati -->
+    <div id="contenitoreViaggi">
+
+    </div>
+</body>
+<script>
+    grafica();
+</script>
+</html>
