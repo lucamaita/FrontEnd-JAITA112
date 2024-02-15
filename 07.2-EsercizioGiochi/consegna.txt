@@ -1,0 +1,11 @@
+CONSEGNA 
+        Creare una sito WEB in cui presenterete una serie di "schede" legate all'ambito collezione di figurine.
+        Le richieste minime sono:
+        
+un form per insierire nuove figurine
+l'elenco delle figurine presenti (nome come intestazione, un immagine, qualche altro dato)
+la possibilità di cancellare le figurine che non vogliamo più
+
+        BONUS
+        
+la possibilità di modificare una figurina già esistente

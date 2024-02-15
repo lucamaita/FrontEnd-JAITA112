@@ -1,0 +1,111 @@
+
+/* Ringrazio ChatGPT per il CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #424242;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+input[type="text"], input[type="number"], input[type="date"], input[list] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #fff;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+input[type="date"]::placeholder {
+    color: #ccc;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#lista {
+    border: 2px solid #616161;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #333333;
+}
+
+.videogame-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    background-color: #424242;
+}
+
+.videogame-item h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.videogame-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+button.delete-btn {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button.delete-btn:hover {
+    background-color: #cc0000;
+}

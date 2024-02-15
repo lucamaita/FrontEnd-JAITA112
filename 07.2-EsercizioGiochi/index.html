@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GameStop</h1>
+
+        <form id="gameForm">
+            <input type="text" id="titolo" name="titolo" placeholder="Titolo" required>
+            <input type="text" id="genere" name="genere" placeholder="Genere" required>
+            <input type="text" list="piattaforma" id="piattaformaScelta" placeholder="Piattaforma">
+            <datalist id="piattaforma">
+                <option value="Playstation"></option>
+                <option value="Xbox"></option>
+                <option value="PC"></option>
+                <option value="Nintendo"></option>
+            </datalist>
+            <input type="number" id="prezzo" name="prezzo" placeholder="Prezzo" required>
+            <input type="number" id="pegi" name="pegi" placeholder="PEGI" required>
+            <input type="date" id="dataRilascio" name="dataRilascio" placeholder="Data Rilascio" required>
+            <button type="submit">Aggiungi</button>
+        </form>
+        <div id="lista"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
