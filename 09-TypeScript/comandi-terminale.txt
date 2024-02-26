@@ -1,0 +1,7 @@
+installare ts nella dir: `npm i -g typescript`
+
+compilare ts: `tsc app.ts`
+
+watch mode: `tsc app.ts --watch`
+
+compila intero progetto: `tsc --init`
