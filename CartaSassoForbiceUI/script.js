@@ -59,7 +59,7 @@ function round(sceltaUtente, sceltaPc) {
             (sceltaUtente === 'forbice' && sceltaPc === 'carta')) {
         ris = "Hai vinto! " + sceltaUtente.toUpperCase() + " contro " + sceltaPc.toUpperCase();
     } else {
-            ris = "Hai perso! " + sceltaPc.toUpperCase() + " contro " + sceltaUtente.toUpperCase();
+            ris = "Hai perso! " + sceltaUtente.toUpperCase() + " contro " + sceltaPc.toUpperCase();
     }
     console.log(ris + "\n\n\n\n");
 
