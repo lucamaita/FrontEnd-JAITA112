@@ -1,0 +1,57 @@
+body {
+    background-color: #222831;
+    color: CanvasText;
+    color-scheme: light dark;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    color: #00ADB5;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 15%;
+    
+}
+
+#sceltaGiocatore {
+    text-align: center;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #00ADB5;
+    color: #EEEEEE;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 5%;
+}
+
+#esitoRound {
+    color: #00ADB5;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 15%;
+    font-size: 45px;
+}
+
+@keyframes animazione-esito {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .esito-round {
+    animation: animazione-esito 0.25s ease-in-out;
+    opacity: 0; /* Assicura che l'elemento sia inizialmente nascosto */
+  }
+  
