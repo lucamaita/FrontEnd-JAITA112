@@ -54,4 +54,8 @@ button{
     animation: animazione-esito 0.26s ease-in-out;
     opacity: 0; 
   }
+
+  @media screen {
+    
+  }
   

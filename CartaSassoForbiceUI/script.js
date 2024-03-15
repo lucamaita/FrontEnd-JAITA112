@@ -1,8 +1,3 @@
-// 4. Il tuo gioco giocherà contro il computer, 
-//     quindi inizia con una funzione chiamata getComputerChoice che restituirà casualmente 'Rock', 
-//      'Paper' o 'Scissors'. Utilizzeremo questa funzione nel gioco per determinare la mossa del computer. 
-//      Suggerimento: usa la console per assicurarti che restituisca l'output atteso prima di passare al 
-//        passaggio successivo!
 function getComputerChoice() {
     var randomNumber = Math.floor(Math.random() * 3);
 
@@ -18,10 +13,6 @@ function getComputerChoice() {
 
 let sceltaPc
 
-// 5. Scrivi una funzione che esegue un singolo round di Rock Paper Scissors. 
-//  La funzione dovrebbe prendere due parametri - playerSelection e computerSelection - 
-//  e quindi restituire una stringa che dichiara il vincitore o il pareggio del round in questo modo: 
-//  "Hai perso! La carta batte il sasso"
 var btnCarta = document.getElementById("btnCarta");
 var btnForbice = document.getElementById("btnForbice");
 var btnSasso = document.getElementById("btnSasso");
