@@ -1,0 +1,65 @@
+/* Reset del margine e del padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Stile dell'intera pagina */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* Stile dell'header */
+  h1 {
+    color: #333;
+  }
+  
+  /* Stile del form */
+  div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Stile della lista */
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  li button {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #666;
+  }
+  
